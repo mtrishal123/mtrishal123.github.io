@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className={`nav ${scrolled || open ? "nav--solid" : ""}`}>
       <div className="container nav__inner">
         <NavLink to="/" className="nav__brand" onClick={() => setOpen(false)}>
-          {profile.initials}
+          {profile.firstName}
           <span className="purple">.</span>
         </NavLink>
 

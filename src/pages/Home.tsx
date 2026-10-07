@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineDownload } from "react-icons/ai";
 import Typewriter from "../components/Typewriter";
 import Socials from "../components/Socials";
+import CodeCard from "../components/CodeCard";
 import { profile } from "../data";
 
 export default function Home() {
@@ -26,10 +27,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hero__art" aria-hidden="true">
-            <div className="monogram">
-              <span>{profile.initials}</span>
-            </div>
+          <div className="hero__art">
+            <CodeCard />
           </div>
         </div>
       </section>
