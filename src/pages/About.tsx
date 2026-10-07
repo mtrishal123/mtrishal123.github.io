@@ -1,6 +1,6 @@
 import { ImPointRight } from "react-icons/im";
 import { MdSchool } from "react-icons/md";
-import { experience, skills, education, profile } from "../data";
+import { experience, skills, education, hobbies, profile } from "../data";
 
 export default function About() {
   return (
@@ -26,6 +26,10 @@ export default function About() {
                 <li><ImPointRight /> Fault-tolerant backends and APIs</li>
                 <li><ImPointRight /> LLM, RAG, and agentic AI applications</li>
                 <li><ImPointRight /> CI/CD and DevSecOps pipelines</li>
+              </ul>
+              <p>When I'm not coding, I enjoy:</p>
+              <ul>
+                {hobbies.map((h) => <li key={h}><ImPointRight /> {h}</li>)}
               </ul>
               <footer className="quote__footer">"{profile.tagline}"</footer>
             </blockquote>

@@ -75,7 +75,6 @@ export type Project = {
   demo?: string;
 };
 
-// TODO: replace `github` with each project's repo URL and add `demo` links where available.
 export const projects: Project[] = [
   {
     title: "CodeVoyage",
@@ -83,15 +82,8 @@ export const projects: Project[] = [
     description:
       "An agentic AI platform built on Subconscious that orchestrates 5+ autonomous agents, using Exa Search for neural repository crawls across TypeScript/Node.js codebases. Token-efficient pipelines cut context retrieval latency by 40%.",
     tech: ["Agentic AI", "Multi-agent", "Exa Search", "TypeScript", "Node.js"],
-    github: "https://github.com/mtrishal123",
-  },
-  {
-    title: "DocuChat AI",
-    date: "Nov 2025",
-    description:
-      "A production RAG pipeline with precision-optimized chunking and sliding-window context retention, delivering sub-2s multi-turn reasoning across 100+ page documents.",
-    tech: ["RAG", "LangChain", "OpenAI", "Pinecone"],
-    github: "https://github.com/mtrishal123",
+    github: "https://github.com/mtrishal123/codevoyage",
+    demo: "https://codevoyage-frontend.onrender.com/",
   },
   {
     title: "Kanban Board",
@@ -99,7 +91,24 @@ export const projects: Project[] = [
     description:
       "A full-stack Kanban board with 15+ features including multi-dimensional filtering and real-time activity logging, backed by 6 normalized PostgreSQL tables with Row Level Security.",
     tech: ["React 19", "TypeScript", "Supabase", "PostgreSQL"],
-    github: "https://github.com/mtrishal123",
+    github: "https://github.com/mtrishal123/kanban-board",
+    demo: "https://kanban-workdeck.netlify.app",
+  },
+  {
+    title: "Food Ordering App",
+    date: "Dec 2025",
+    description:
+      "A food ordering app spanning 26+ cuisines on TheMealDB API, with real-time search and filtering, a persistent cart, authentication with protected routes, checkout, and order history. Scores 100 on Lighthouse SEO and Best Practices.",
+    tech: ["React 19", "React Router", "Context API", "TheMealDB API", "Netlify"],
+    github: "https://github.com/mtrishal123/food-ordering-app",
+    demo: "https://onlineorderfood.netlify.app/",
+  },
+  {
+    title: "DocuChat AI",
+    date: "Nov 2025",
+    description:
+      "A production RAG pipeline with precision-optimized chunking and sliding-window context retention, delivering sub-2s multi-turn reasoning across 100+ page documents.",
+    tech: ["RAG", "LangChain", "OpenAI", "Pinecone"],
   },
   {
     title: "Flashcard Study App",
@@ -107,7 +116,8 @@ export const projects: Project[] = [
     description:
       "An interactive study app with deck management, a timed quiz mode with live scoring, and cookie-based session authentication.",
     tech: ["React", "Node.js", "Express"],
-    github: "https://github.com/mtrishal123",
+    github: "https://github.com/mtrishal123/FlashCard-Study-App",
+    demo: "https://flashcard-study-app-z340.onrender.com",
   },
 ];
 
@@ -119,6 +129,8 @@ export const skills: Record<string, string[]> = {
   "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Git", "Linux", "GitOps"],
   Monitoring: ["Prometheus", "Grafana", "CloudWatch", "Splunk", "PostHog"],
 };
+
+export const hobbies = ["Playing basketball", "Hiking", "Reading"];
 
 export const education = {
   school: "Northeastern University",

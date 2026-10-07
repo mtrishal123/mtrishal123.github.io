@@ -22,18 +22,20 @@ export default function Projects() {
                 <div className="chips">
                   {p.tech.map((t) => <span key={t} className="chip chip--sm">{t}</span>)}
                 </div>
-                <div className="project__links">
-                  {p.github && (
-                    <a className="btn" href={p.github} target="_blank" rel="noreferrer">
-                      <BsGithub /> GitHub
-                    </a>
-                  )}
-                  {p.demo && (
-                    <a className="btn btn--ghost" href={p.demo} target="_blank" rel="noreferrer">
-                      <CgWebsite /> Demo
-                    </a>
-                  )}
-                </div>
+                {(p.github || p.demo) && (
+                  <div className="project__links">
+                    {p.github && (
+                      <a className="btn" href={p.github} target="_blank" rel="noreferrer">
+                        <BsGithub /> GitHub
+                      </a>
+                    )}
+                    {p.demo && (
+                      <a className="btn btn--ghost" href={p.demo} target="_blank" rel="noreferrer">
+                        <CgWebsite /> Demo
+                      </a>
+                    )}
+                  </div>
+                )}
               </article>
             ))}
           </div>
