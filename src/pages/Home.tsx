@@ -28,7 +28,13 @@ export default function Home() {
             </div>
           </div>
           <div className="hero__art">
-            <CodeCard />
+            <img
+              src={`${import.meta.env.BASE_URL}developer-illustration.svg`}
+              alt="Illustration of a developer coding at a desk"
+              className="hero__img"
+              width={800}
+              height={573}
+            />
           </div>
         </div>
       </section>
@@ -66,6 +72,9 @@ export default function Home() {
                 looking for full-time software engineering roles across backend, full-stack, and AI.
               </p>
             </div>
+          </div>
+          <div className="intro__art">
+            <CodeCard />
           </div>
         </div>
       </section>

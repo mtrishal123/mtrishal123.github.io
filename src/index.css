@@ -445,7 +445,20 @@ img {
 }
 
 .intro__grid {
-  max-width: 860px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+.intro__art {
+  display: grid;
+  place-items: center;
+}
+.hero__img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  animation: float 7s ease-in-out infinite;
 }
 .intro__body {
   font-size: 1.15rem;
@@ -725,6 +738,7 @@ img {
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .hero__grid,
+  .intro__grid,
   .about__grid {
     grid-template-columns: 1fr;
   }
