@@ -3,11 +3,8 @@
 export const profile = {
   name: "Trishal Varma Mudunuri",
   firstName: "Trishal",
-  initials: "TV",
   location: "San Francisco, CA",
-  email: "mtrishal379@gmail.com",
   github: "https://github.com/mtrishal123",
-  githubUser: "mtrishal123",
   linkedin: "https://www.linkedin.com/in/trishalvarma",
   resume: `${import.meta.env.BASE_URL}resume.pdf`,
   roles: [

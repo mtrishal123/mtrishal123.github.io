@@ -9,7 +9,7 @@ export default function About() {
         <div className="container about__grid">
           <div>
             <h1 className="page__title">
-              Know who <span className="purple">I'M</span>
+              Know Who <span className="purple">I'm</span>
             </h1>
             <blockquote className="card quote">
               <p>
@@ -86,21 +86,6 @@ export default function About() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <h2 className="section__title">
-            Days I <span className="purple">Code</span>
-          </h2>
-          <div className="card gh-chart">
-            <img
-              src={`https://ghchart.rshah.org/c770f0/${profile.githubUser}`}
-              alt={`${profile.githubUser}'s GitHub contribution chart`}
-              loading="lazy"
-            />
           </div>
         </div>
       </section>

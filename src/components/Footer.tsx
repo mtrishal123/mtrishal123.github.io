@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <p>Designed &amp; built by {profile.name}</p>
-        <p>© {year} {profile.initials}</p>
+        <p>© {year} {profile.name}</p>
         <Socials className="socials--small" />
       </div>
     </footer>

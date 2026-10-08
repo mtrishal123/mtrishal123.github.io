@@ -15,7 +15,7 @@ export default function Home() {
               Hi there! <span className="wave" role="img" aria-label="waving hand">👋🏻</span>
             </h1>
             <h1 className="hero__name">
-              I'm <strong className="purple">{profile.name.toUpperCase()}</strong>
+              I'm <strong className="purple">{profile.name}</strong>
             </h1>
             <p className="hero__type">
               <Typewriter words={profile.roles} />
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="container intro__grid">
           <div>
             <h2 className="section__title">
-              Let me <span className="purple">introduce</span> myself
+              Let Me <span className="purple">Introduce</span> Myself
             </h2>
             <div className="intro__body">
               <p>
@@ -81,7 +81,7 @@ export default function Home() {
 
       <section className="section connect">
         <div className="container">
-          <h2 className="section__title">Find me on</h2>
+          <h2 className="section__title">Find Me On</h2>
           <p>
             Feel free to <span className="purple">connect</span> with me
           </p>
