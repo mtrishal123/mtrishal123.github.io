@@ -101,13 +101,6 @@ export const projects: Project[] = [
     demo: "https://onlineorderfood.netlify.app/",
   },
   {
-    title: "DocuChat AI",
-    date: "Nov 2025",
-    description:
-      "A production RAG pipeline with precision-optimized chunking and sliding-window context retention, delivering sub-2s multi-turn reasoning across 100+ page documents.",
-    tech: ["RAG", "LangChain", "OpenAI", "Pinecone"],
-  },
-  {
     title: "Flashcard Study App",
     date: "Oct 2025",
     description:
